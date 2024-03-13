@@ -33,7 +33,6 @@ None
 * HTML
 * SASS/CSS
 * JAVASCRIPT
-* PHP
 
 ## License
 MIT
