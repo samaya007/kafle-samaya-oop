@@ -32,7 +32,9 @@ nav{
       text-decoration: none;
     }
     a.active,a:hover{
-      background: #5c5b5b;
+      background: #a9a244;
+      box-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28; 
+
       transition: .5s;
     }
     .checkbtn{
