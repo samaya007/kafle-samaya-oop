@@ -1,6 +1,5 @@
 # JKpot
-
-Hello my name is Samaya and this is my portfolio. I am a UX Designer and here i've showcased my top projects and skills. Here I've listed 3 main projects which covers brand deasigning, rebranding, 3D modeling, coding and many more. 
+This jackpot game is designed to entertain users with a simple yet engaging gameplay experience. The objective is straightforward: players aim to match rows or columns containing the same shape within a grid of 25 boxes arranged in a 5x5 layout. Each box contains one of five different shapes.
 
 
 ## History
