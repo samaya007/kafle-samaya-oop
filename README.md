@@ -27,3 +27,8 @@ None
 
 ## License
 MIT
+
+
+## WINNING
+![image](https://github.com/samaya007/kafle-samaya-oop-js/assets/121986334/f74f5087-a724-43b9-af6d-46dfe46e35d7)
+
