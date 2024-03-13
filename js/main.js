@@ -1,5 +1,7 @@
 import { GameManager } from "./modules/GameManager.js";
+import { gsapanimation } from "./modules/gsapanimation.js";
 
+gsapanimation();
 
   const gameBoardElement = document.querySelector("#game-board");
   const triesLeftElement = document.querySelector("#tries-left");
