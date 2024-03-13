@@ -1,0 +1,82 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+background-color: #060606;
+
+}
+html {
+  height: 100%;
+}
+
+
+
+
+//heading
+.heading {
+  text-align: center; 
+}
+
+.jackpot {
+  font-size: 36px; 
+  margin: 0; 
+  color: #ffca28; 
+  animation: glow 2s infinite alternate; 
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28; /* Define glow effect */
+  }
+  to {
+    text-shadow: 0 0 20px #ffca28, 0 0 30px #ffca28, 0 0 40px #ffca28; /* Define glow effect */
+  }
+}
+
+@media (max-width: 768px) {
+  .jackpot {
+    font-size: 24px; /* Decrease font size for mobile */
+  }
+}
+
+
+
+// rules
+
+.rules {
+  text-align: center;
+  background-color: #ffffff; 
+  padding: 20px; 
+}
+
+.game-rule {
+  color: #0c0c0c;
+ }
+
+
+
+
+ //bonus
+
+ .bonus-heading{
+  color: white;
+ }
+ .bonus-note{
+  color: white;
+ }
+
+// objective
+
+.obj{
+  color: white;
+}
+
+.objective-para{
+  color: white;
+}
