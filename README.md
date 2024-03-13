@@ -9,7 +9,8 @@ This jackpot game is designed to entertain users with a simple yet engaging game
 In this jackpot game, your objective is to match rows or columns containing the same shape. The game consists of a grid of 25 boxes, arranged in 5 rows and 5 columns. Each box contains one of five different shapes. 
 ![image](https://github.com/samaya007/kafle-samaya-oop-js/assets/121986334/f74f5087-a724-43b9-af6d-46dfe46e35d7)
 Your goal is to strategically select boxes in an attempt to align either entire rows or columns with identical shapes. If you successfully match an entire row or column with the same shape, congratulations, you've won the jackpot! Or if you have 0 tires remaing then you will lose
-![image](https://github.com/samaya007/kafle-samaya-oop/assets/121986334/06463681-7336-45c0-b514-d7228787c959)
+![image](https://github.com/samaya007/kafle-samaya-oop/assets/121986334/06463681-7336-45c0-b514-d7228787c959) 
+
 Better luck next time
 
 
