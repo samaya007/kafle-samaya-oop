@@ -1,3 +1,5 @@
+import './../sass/main.scss'
+
 import { GameManager } from "./modules/GameManager.js";
 import { gsapanimation } from "./modules/gsapanimation.js";
 

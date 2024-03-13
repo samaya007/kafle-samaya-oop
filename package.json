@@ -1,0 +1,16 @@
+{
+  "name": "kafle-samaya-oop",
+  "version": "1.0.0",
+  "description": "this is the JKpot game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "sanaya kafle",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.71.1"
+  }
+}

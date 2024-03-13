@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKpot</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">JKpot</label>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+
+          </ul>
+        </nav>
+
+<section class="heading"> 
+ <p class="jackpot"> <b> Try your Luck </b> </p>
+</section>
+<br>
+        <div id="game-container">
+            <div id="game-info">
+                <span id="tries-left">Tries Left: 20</span>
+            </div>
+            <div id="game-board"></div>
+            <button id="restart-game">Restart Game</button> 
+            <div class="winner-message hidden">WINNER</div>
+            <div id="message" class="hidden"></div>
+        </div>
+        <hr>
+
+<section class="rules">
+    <h1 class="game-rule"> HOW TO PLAY </h1>
+</section>
+<hr>
+
+<section class="three-steps">
+    <h1 class="obj"> Objective</h1>
+    <p class="objective-para">
+        In this jackpot game, your objective is to match rows or columns containing the same shape. The game consists of a grid of 25 boxes, arranged in 5 rows and 5 columns. 
+        Each box contains one of five different shapes.
+    </p>
+
+    <img class="obimage" src="img/won.png" alt="wining">
+    
+    <p class="objective-para">
+        Your goal is to strategically select boxes in an attempt to align either entire rows or columns with identical shapes.
+        If you successfully match an entire row or column with the same shape, congratulations, you've won the jackpot! 
+    </p>
+</section>
+
+
+
+<hr>
+<section class="bonus">
+    <hr>
+    <h1 class="bonus-heading">BONUS</h1>
+    <p class="bonus-note"> Even though we have a limit of 20 tries sometimes we give me 1-2 tries for free !!!   😉
+    </p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script type="module" src="js/main.js"></script>
+    </body>
+</html>
