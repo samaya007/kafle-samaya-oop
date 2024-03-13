@@ -1,0 +1,304 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+//background-color: #060606;
+
+}
+html {
+  height: 100%;
+}
+
+.win-message,
+.lose-message,
+.message {
+  color: rgb(255, 255, 255); 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  animation: pop 0.5s ease forwards; 
+  padding: 10px 20px; 
+  border-radius: 8px; 
+}
+
+.win-message::before,
+.lose-message::before,
+.message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+  border-radius: inherit; 
+  z-index: -1;
+}
+
+
+
+
+#game-container {
+  position: relative;
+  .game-info {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .winner-message {
+    display: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.tile {
+  background-color: #fff;
+  border: 6px solid #000;
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.3s; 
+}
+
+.tile:hover {
+  box-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28; 
+}
+
+
+.blurred {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; 
+  height: 100px; 
+  background-size: contain; 
+  background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    width: 60px; 
+    height: 60px; 
+    font-size: 20px; 
+  }
+}
+
+#tries-left {
+  position: absolute;
+  top: 500px; /* Adjust top position */
+  left: 50%; /* Adjust left position */
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//nav
+
+nav{
+background-color: #1A1A1A
+;  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 2px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #5c5b5b;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+
+
+
+//button
+
+
+
+
+#restart-game {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+#restart-game:hover {
+  background-color: #1b9bff; 
+  color: white; 
+}
+
+
+//heading
+.heading {
+  text-align: center; 
+}
+
+.jackpot {
+  font-size: 36px; 
+  margin: 0; 
+  color: #ffca28; 
+  animation: glow 2s infinite alternate; 
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28; /* Define glow effect */
+  }
+  to {
+    text-shadow: 0 0 20px #ffca28, 0 0 30px #ffca28, 0 0 40px #ffca28; /* Define glow effect */
+  }
+}
+
+@media (max-width: 768px) {
+  .jackpot {
+    font-size: 24px; /* Decrease font size for mobile */
+  }
+}
+
+
+
+// objectives
+
+.rules {
+  text-align: center;
+  background-color: #ff0000; 
+  padding: 20px; 
+}
+
+.game-rule {
+  color: #333;
+ }
+
+ // image
+ .objective-image {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 2%;
+}
