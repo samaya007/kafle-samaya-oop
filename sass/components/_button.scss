@@ -1,0 +1,39 @@
+//button
+
+
+
+
+#restart-game {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  #restart-game:hover {
+    background-color: #a9a244; 
+    color: rgb(0, 0, 0); 
+    box-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28; 
+
+  }
+
+  
+  //not a button but still
+  #tries-left {
+    position: absolute;
+    top: 500px; /* Adjust top position */
+    left: 50%; /* Adjust left position */
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  
+  
